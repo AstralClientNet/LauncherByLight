@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Pizzaria1"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d" Height="600" Width="1024" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None" >
-    <Grid Background="#181818" MouseDown="Grid_MouseDown">
+    <Grid Background="#0F0F0F" MouseDown="Grid_MouseDown">
         <Grid.RowDefinitions>
             <RowDefinition Height="41*"/>
             <RowDefinition Height="59*"/>
@@ -19,7 +19,14 @@
         </Grid.ColumnDefinitions>
         <StackPanel VerticalAlignment="Top" Grid.ColumnSpan="2" Height="42">
 
-            <Grid Panel.ZIndex="1"  Background="#121212" Height="10"/>
+            <Grid Panel.ZIndex="1" Height="10">
+                <Grid.Background>
+                    <RadialGradientBrush>
+                        <GradientStop Color="Black" Offset="1"/>
+                        <GradientStop Color="#FF894AD4"/>
+                    </RadialGradientBrush>
+                </Grid.Background>
+            </Grid>
             <Grid Margin="5" Height="27">
 
                 <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
@@ -51,10 +58,20 @@
 
         </Grid>
 
-        <Grid Width="200" HorizontalAlignment="Left" Background="#161616" Margin="0,42,0,62" Grid.RowSpan="2">
-            <materialDesign:TransitioningContent x:Name="TrainsitionigContentSlide" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.2}" Foreground="#FF323131" Margin="0,0,0,164">
+        <Grid Width="200" HorizontalAlignment="Left" Background="#161616" Margin="0,10,0,0" Grid.RowSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="34*"/>
+                <ColumnDefinition Width="33*"/>
+            </Grid.ColumnDefinitions>
+            <materialDesign:TransitioningContent x:Name="TrainsitionigContentSlide" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.2}" Foreground="#FF323131" Margin="0,28,0,127" Grid.ColumnSpan="2">
 
-                <Grid x:Name="GridCursor" Margin="0 100 0 0" Background="MediumPurple" Width="6" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top">
+                <Grid x:Name="GridCursor" Margin="0 100 0 0" Width="6" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top">
+                    <Grid.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FFA100C5"/>
+                            <GradientStop Color="#FF404DC9" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Grid.Background>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="0*"/>
                         <RowDefinition/>
@@ -65,7 +82,7 @@
 
             </materialDesign:TransitioningContent>
 
-            <ListView x:Name="ListViewMenu" Margin="0,100,0,155" Foreground="White" FontFamily="Champagne &amp; Limousines" FontSize="18" SelectionChanged="ListViewMenu_SelectionChanged" SelectedIndex="0">
+            <ListView x:Name="ListViewMenu" Margin="0,128,0,127" Foreground="White" FontFamily="Champagne &amp; Limousines" FontSize="18" SelectionChanged="ListViewMenu_SelectionChanged" SelectedIndex="0" Grid.ColumnSpan="2">
                 <ListViewItem Height="60" Selected="ListViewItem_Selected" Background="Transparent">
                     <StackPanel Orientation="Horizontal">
                         <materialDesign:PackIcon Kind="Home" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
@@ -91,7 +108,7 @@
                     </StackPanel>
                 </ListViewItem>
             </ListView>
-            <Image Panel.ZIndex="10" Source="LogoNoBg2.png" HorizontalAlignment="Left" Height="150" VerticalAlignment="Top" Width="132" Margin="-5,-42,0,0"/>
+            <Image Panel.ZIndex="10" Source="LogoNoBg2.png" HorizontalAlignment="Left" Height="182" VerticalAlignment="Top" Width="189" Margin="0,-30,0,0" Grid.ColumnSpan="2"/>
         </Grid>
 
     </Grid>
