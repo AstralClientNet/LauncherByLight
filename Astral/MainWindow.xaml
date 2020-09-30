@@ -91,7 +91,7 @@
                     </StackPanel>
                 </ListViewItem>
             </ListView>
-            <Image Panel.ZIndex="10" Source="LogoNoBg2.png" HorizontalAlignment="Left" Height="150" VerticalAlignment="Top" Width="132" Margin="30,-22,0,0"/>
+            <Image Panel.ZIndex="10" Source="LogoNoBg2.png" HorizontalAlignment="Left" Height="150" VerticalAlignment="Top" Width="132" Margin="-7,-39,0,0"/>
         </Grid>
 
     </Grid>
