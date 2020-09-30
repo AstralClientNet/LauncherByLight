@@ -26,10 +26,10 @@
                     <Button Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="Gray" Click="Button_Click">
                         <materialDesign:PackIcon Kind="GithubBox"/>
                     </Button>
-                    <Button Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="Gray">
+                    <Button Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="Gray" Click="Button_Click_2">
                         <materialDesign:PackIcon Kind="Twitter"/>
                     </Button>
-                    <Button Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="Gray">
+                    <Button Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="Gray" Click="Button_Click_1">
                         <materialDesign:PackIcon Kind="Web"/>
                     </Button>
                 </StackPanel>

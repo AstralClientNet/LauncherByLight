@@ -124,5 +124,15 @@ namespace Pizzaria1
         {
             Process.Start("https://github.com/AstralClientNet");
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Process.Start("https://astralclient.net");
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            Process.Start("https://twitter.com/AstralClient");
+        }
     }
 }
