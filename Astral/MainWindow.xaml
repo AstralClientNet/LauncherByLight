@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Pizzaria1"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d" Height="600" Width="1024" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None" >
-    <Grid Background="#0F0F0F" MouseDown="Grid_MouseDown">
+    <Grid Background="#0A0A0A" MouseDown="Grid_MouseDown">
         <Grid.RowDefinitions>
             <RowDefinition Height="41*"/>
             <RowDefinition Height="59*"/>
@@ -59,7 +59,7 @@
 
         </Grid>
 
-        <Grid Width="200" HorizontalAlignment="Left" Background="#161616" Margin="0,10,0,0" Grid.RowSpan="2">
+        <Grid Width="200" HorizontalAlignment="Left" Background="#111111" Margin="0,10,0,0" Grid.RowSpan="2">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="34*"/>
                 <ColumnDefinition Width="33*"/>
@@ -109,7 +109,7 @@
                     </StackPanel>
                 </ListViewItem>
             </ListView>
-            <Image Panel.ZIndex="10" Source="LogoNoBg2.png" HorizontalAlignment="Left" Height="182" VerticalAlignment="Top" Width="189" Margin="0,-30,0,0" Grid.ColumnSpan="2"/>
+            <Image Panel.ZIndex="10" Source="LogoNoBg2.png" HorizontalAlignment="Left" Height="158" VerticalAlignment="Top" Width="164" Margin="16,-17,0,0" Grid.ColumnSpan="2"/>
         </Grid>
 
     </Grid>
