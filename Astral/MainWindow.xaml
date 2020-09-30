@@ -55,6 +55,7 @@
 
         <Grid Margin="205,42,0,4" Grid.ColumnSpan="2" Grid.RowSpan="2">
             <Grid x:Name="GridPrincipal" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Grid HorizontalAlignment="Left" Height="586" Margin="-5,-32,0,0" VerticalAlignment="Top" Width="5" Background="#FF131212"/>
 
         </Grid>
 
