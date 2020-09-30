@@ -21,7 +21,7 @@ using System.Diagnostics;
 using System.Collections.ObjectModel;
 using System.Management.Automation;
 
-namespace Pizzaria1
+namespace Astral
 {
 
     /// <summary>

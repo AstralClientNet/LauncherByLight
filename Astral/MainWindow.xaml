@@ -39,7 +39,7 @@
                     <Button Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="Gray" Click="Button_Click_1">
                         <materialDesign:PackIcon Kind="Web"/>
                     </Button>
-                    <Button x:Name="patreon" Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="Gray" Click="Button_Click_1" Margin="0,0,0,-3">
+                    <Button x:Name="patreon" Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="Gray" Click="patreoncllick" Margin="0,0,0,-3">
                         <materialDesign:PackIcon Kind="Parking"/>
                     </Button>
                 </StackPanel>
@@ -57,7 +57,11 @@
         </StackPanel>
 
         <Grid Margin="205,42,0,4" Grid.ColumnSpan="2" Grid.RowSpan="2">
-            <Grid x:Name="GridPrincipal" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="365*"/>
+                <ColumnDefinition Width="454*"/>
+            </Grid.ColumnDefinitions>
+            <Grid x:Name="GridPrincipal" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1" Margin="45,277,409,277"/>
             <Grid HorizontalAlignment="Left" Height="586" Margin="-5,-32,0,0" VerticalAlignment="Top" Width="5" Background="#FF131212"/>
 
         </Grid>

@@ -17,7 +17,7 @@ using System.Management.Automation;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
 
-namespace Pizzaria1
+namespace Astral
 {
     public partial class MainWindow : Window
     {
