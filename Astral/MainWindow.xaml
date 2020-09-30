@@ -46,7 +46,7 @@
 
         </StackPanel>
 
-        <Grid Margin="205,56,0,-10" Grid.ColumnSpan="2" Grid.RowSpan="2">
+        <Grid Margin="205,42,0,4" Grid.ColumnSpan="2" Grid.RowSpan="2">
             <Grid x:Name="GridPrincipal" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
         </Grid>
@@ -91,7 +91,7 @@
                     </StackPanel>
                 </ListViewItem>
             </ListView>
-            <Image Panel.ZIndex="10" Source="LogoNoBg2.png" HorizontalAlignment="Left" Height="150" VerticalAlignment="Top" Width="132" Margin="-7,-39,0,0"/>
+            <Image Panel.ZIndex="10" Source="LogoNoBg2.png" HorizontalAlignment="Left" Height="150" VerticalAlignment="Top" Width="132" Margin="-5,-42,0,0"/>
         </Grid>
 
     </Grid>
