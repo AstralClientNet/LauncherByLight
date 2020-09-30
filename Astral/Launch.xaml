@@ -6,15 +6,15 @@
              xmlns:local="clr-namespace:Pizzaria1"
              mc:Ignorable="d" 
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-             Height="auto" Width="auto">
+             Height="auto" Width="807">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="83*"/>
             <ColumnDefinition Width="7*"/>
         </Grid.ColumnDefinitions>
         <materialDesign:TransitioningContent x:Name="TrainsitionigContentSlide" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.8}" Grid.ColumnSpan="2">
-            <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom">
-                <StackPanel Width="480" Height="280" RenderTransformOrigin="0.5,0.5">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="637">
+                <StackPanel Width="507" Height="280" RenderTransformOrigin="0.5,0.5">
                     <StackPanel.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
@@ -24,7 +24,7 @@
                         </TransformGroup>
                     </StackPanel.RenderTransform>
                     <TextBlock FontFamily="Cooper Black" Foreground="#FFC00000"/>
-                    <StackPanel Margin="10">
+                    <StackPanel Margin="10,10,-177,10">
                         <TextBlock Text="Launch" FontSize="50" FontFamily="SansSerif" Foreground="WhiteSmoke"/>
                         <TextBlock TextAlignment="Left" FontSize="25" FontFamily="Champagne &amp; Limousines" FontWeight="Bold" Margin="10,5,262,5" Foreground="#FFCDCDCD"><Run Text="Minecraft"/><Run Text=" "/></TextBlock>
                         <Label x:Name="mcVersion" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="258" Height="59" FontSize="24" Foreground="#FFE4E3E3"/>

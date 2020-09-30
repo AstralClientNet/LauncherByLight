@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Astral
+namespace Pizzaria1
 {
     /// <summary>
     /// Interação lógica para UserControlEscolha.xam
