@@ -39,6 +39,9 @@
                     <Button Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="Gray" Click="Button_Click_1">
                         <materialDesign:PackIcon Kind="Web"/>
                     </Button>
+                    <Button x:Name="patreon" Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="Gray" Click="Button_Click_1" Margin="0,0,0,-3">
+                        <materialDesign:PackIcon Kind="Parking"/>
+                    </Button>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="10 0">
                     <Button Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="Gray"/>
@@ -47,7 +50,7 @@
                     </Button>
                 </StackPanel>
                 <Label x:Name="discordRpc" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="657,4,0,0" Foreground="#FF121212"/>
-                <Label Content="Astral Client" HorizontalAlignment="Left" Margin="346,-6,0,0" VerticalAlignment="Top" Foreground="Gray" FontSize="20"/>
+                <Label Content="Astral Client" HorizontalAlignment="Left" Margin="331,-6,0,0" VerticalAlignment="Top" Foreground="Gray" FontSize="20"/>
 
             </Grid>
 
@@ -104,7 +107,7 @@
                 </ListViewItem>
                 <ListViewItem Height="60">
                     <StackPanel Orientation="Horizontal">
-                        <materialDesign:PackIcon Kind="Login" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
+                        <materialDesign:PackIcon Kind="Newspaper" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
                         <TextBlock Text="About Us" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
                     </StackPanel>
                 </ListViewItem>

@@ -134,5 +134,10 @@ namespace Pizzaria1
         {
             Process.Start("https://twitter.com/AstralClient");
         }
+
+        private void patreoncllick(object sender, RoutedEventArgs e)
+        {
+            Process.Start("https://www.patreon.com/astralclient");
+        }
     }
 }
