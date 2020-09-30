@@ -1,0 +1,98 @@
+﻿<Window x:Class="Pizzaria1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pizzaria1"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d" Height="600" Width="1024" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None" >
+    <Grid Background="#181818" MouseDown="Grid_MouseDown">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="41*"/>
+            <RowDefinition Height="59*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="19*"/>
+            <ColumnDefinition Width="45*"/>
+
+        </Grid.ColumnDefinitions>
+        <StackPanel VerticalAlignment="Top" Grid.ColumnSpan="2" Height="42">
+
+            <Grid Panel.ZIndex="1"  Background="#121212" Height="10"/>
+            <Grid Margin="5" Height="27">
+
+                <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+                    <Button Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="Gray" Click="Button_Click">
+                        <materialDesign:PackIcon Kind="GithubBox"/>
+                    </Button>
+                    <Button Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="Gray">
+                        <materialDesign:PackIcon Kind="Twitter"/>
+                    </Button>
+                    <Button Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="Gray">
+                        <materialDesign:PackIcon Kind="Web"/>
+                    </Button>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="10 0">
+                    <Button Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="Gray"/>
+                    <Button x:Name="ButtonFechar" Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="Gray" Click="ButtonFechar_Click">
+                        <materialDesign:PackIcon Kind="Close"/>
+                    </Button>
+                </StackPanel>
+                <Label x:Name="discordRpc" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="657,4,0,0" Foreground="#FF121212"/>
+                <Label Content="Astral Client" HorizontalAlignment="Left" Margin="346,-6,0,0" VerticalAlignment="Top" Foreground="Gray" FontSize="20"/>
+
+            </Grid>
+
+        </StackPanel>
+
+        <Grid Margin="205,56,0,-10" Grid.ColumnSpan="2" Grid.RowSpan="2">
+            <Grid x:Name="GridPrincipal" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+        </Grid>
+
+        <Grid Width="200" HorizontalAlignment="Left" Background="#161616" Margin="0,42,0,62" Grid.RowSpan="2">
+            <materialDesign:TransitioningContent x:Name="TrainsitionigContentSlide" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.2}" Foreground="#FF323131" Margin="0,0,0,164">
+
+                <Grid x:Name="GridCursor" Margin="0 100 0 0" Background="MediumPurple" Width="6" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="0*"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+
+                </Grid>
+
+            </materialDesign:TransitioningContent>
+
+            <ListView x:Name="ListViewMenu" Margin="0,100,0,155" Foreground="White" FontFamily="Champagne &amp; Limousines" FontSize="18" SelectionChanged="ListViewMenu_SelectionChanged" SelectedIndex="0">
+                <ListViewItem Height="60" Selected="ListViewItem_Selected" Background="Transparent">
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon Kind="Home" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
+                        <TextBlock Text="Launch" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
+                    </StackPanel>
+                </ListViewItem>
+                <ListViewItem Height="60">
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon Kind="Settings" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
+                        <TextBlock Text="Options" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
+                    </StackPanel>
+                </ListViewItem>
+                <ListViewItem Height="60">
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon Kind="FormatListBulleted" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
+                        <TextBlock Text="Update" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
+                    </StackPanel>
+                </ListViewItem>
+                <ListViewItem Height="60">
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon Kind="Login" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
+                        <TextBlock Text="About Us" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
+                    </StackPanel>
+                </ListViewItem>
+            </ListView>
+            <Image Panel.ZIndex="10" Source="LogoNoBg2.png" HorizontalAlignment="Left" Height="150" VerticalAlignment="Top" Width="132" Margin="30,-22,0,0"/>
+        </Grid>
+
+    </Grid>
+</Window>
