@@ -47,6 +47,7 @@
                             <Button Width="119" Content="Select Branch..." FontFamily="Champagne &amp; Limousines" Margin="10" Background="#FF9B3FE0" BorderBrush="#002196F3"/>
                         </StackPanel>
                     </StackPanel>
+                    <Grid HorizontalAlignment="Left" Height="2" Margin="13,57,0,0" VerticalAlignment="Top" Width="180" Background="#FF9E9E9E"/>
                 </Grid>
                 <Grid Grid.Column="1" Background="#FF171717" Margin="165,42,0,48" Grid.ColumnSpan="2">
                     <Grid.Effect>
@@ -68,6 +69,7 @@
                             <Button Width="110" Content="Select Path..." FontFamily="Champagne &amp; Limousines" Margin="10" BorderBrush="#002196F3" Background="#FF9B3FE0"/>
                         </StackPanel>
                     </StackPanel>
+                    <Grid HorizontalAlignment="Left" Height="2" Margin="13,57,0,0" VerticalAlignment="Top" Width="180" Background="#FF9E9E9E"/>
                 </Grid>
             </Grid>
         </materialDesign:TransitioningContent>

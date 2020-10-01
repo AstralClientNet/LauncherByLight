@@ -50,8 +50,8 @@
                     <Button FontFamily="Champagne &amp; Limousines" Content="Launch" FontSize="18" Margin="20,25,200,25" Click="Button_Click" Height="41" BorderBrush="#009C3DFB">
                         <Button.Background>
                             <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
-                                <GradientStop Color="#FF5A30EC" Offset="0.773"/>
-                                <GradientStop Color="#FFBE3AFD"/>
+                                <GradientStop Color="#FF404DC9"/>
+                                <GradientStop Color="#FFA100C5" Offset="1"/>
                             </LinearGradientBrush>
                         </Button.Background>
                     </Button>
