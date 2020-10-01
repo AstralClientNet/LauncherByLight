@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Pizzaria1"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d" Height="596" Width="1011" AllowsTransparency="True" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None" Background="Transparent" Margin="10">
-    
+
     <Grid Background="#0A0A0A" MouseDown="Grid_MouseDown">
         <Grid.Effect>
             <DropShadowEffect BlurRadius="15" Direction="-90" RenderingBias="Quality" ShadowDepth="2"/>
@@ -28,7 +28,7 @@
                     <DropShadowEffect BlurRadius="20" Color="#0F0F0F" ShadowDepth="1"/>
                 </Grid.Effect>
                 <Grid.Background>
-                    
+
                     <RadialGradientBrush>
                         <GradientStop Color="Black" Offset="1"/>
                         <GradientStop Color="#FF894AD4"/>
@@ -157,7 +157,7 @@
                     </StackPanel>
                 </ListViewItem>
             </ListView>
-            <Image Panel.ZIndex="10" Source="LogoNoBg2.png" HorizontalAlignment="Left" Height="156" VerticalAlignment="Top" Width="177" Margin="23,-12,0,0"/>
+            <Image Panel.ZIndex="10" Source="LogoNoBg2.png" HorizontalAlignment="Left" Height="161" VerticalAlignment="Top" Width="152" Margin="23,-15,0,0"/>
             <Image Panel.ZIndex="10" Source="Assets/PicsArt_12-18-03.16.43.jpg" HorizontalAlignment="Left" Height="37" VerticalAlignment="Top" Width="38" Margin="13,534,0,0"/>
             <Label Content="Light#0622" HorizontalAlignment="Left" Margin="56,534,0,0" VerticalAlignment="Top" Foreground="Gray" FontSize="20"/>
         </Grid>
