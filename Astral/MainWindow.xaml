@@ -51,7 +51,9 @@
                     </Button>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="10 0">
-                    <Button Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="Gray"/>
+                    <Button x:Name="MinimizeButton" Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="Gray" Click="MinimizeButton_Click">
+                        <materialDesign:PackIcon Kind="Minus"/>
+                    </Button>
                     <Button x:Name="ButtonFechar" Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="Gray" Click="ButtonFechar_Click">
                         <materialDesign:PackIcon Kind="Close"/>
                     </Button>
@@ -127,8 +129,8 @@
                 </ListViewItem>
                 <ListViewItem Height="60">
                     <StackPanel Orientation="Horizontal">
-                        <materialDesign:PackIcon Kind="FormatListBulleted" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
-                        <TextBlock Text="Update" FontSize="17" VerticalAlignment="Center" Margin="20 0">
+                        <materialDesign:PackIcon Kind="Newspaper" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
+                        <TextBlock Text="Feed" FontSize="17" VerticalAlignment="Center" Margin="20 0">
                             <TextBlock.Effect>
                                 <DropShadowEffect
                                    ShadowDepth="4"
@@ -142,7 +144,7 @@
                 </ListViewItem>
                 <ListViewItem Height="60">
                     <StackPanel Orientation="Horizontal">
-                        <materialDesign:PackIcon Kind="Newspaper" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
+                        <materialDesign:PackIcon Kind="FormatListBulleted" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
                         <TextBlock Text="About Us" FontSize="17" VerticalAlignment="Center" Margin="20 0">
                             <TextBlock.Effect>
                                 <DropShadowEffect

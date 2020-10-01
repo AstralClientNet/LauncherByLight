@@ -139,5 +139,10 @@ namespace Pizzaria1
         {
             Process.Start("https://www.patreon.com/astralclient");
         }
+
+        private void MinimizeButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.WindowState = WindowState.Minimized;
+        }
     }
 }

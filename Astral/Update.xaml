@@ -23,42 +23,45 @@
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <Grid Grid.Column="0" Height="300" Background="#FF171717" Margin="10" Width="230">
+                
+                <Grid Grid.Column="0" Background="#FF171717" Margin="2,81,10,68">
                     <Grid.Effect>
                         <DropShadowEffect BlurRadius="20" Color="#0F0F0F" ShadowDepth="1"/>
                     </Grid.Effect>
 
-                    <StackPanel Width="200">
-                        <TextBlock Margin="10" FontFamily="SansSerif" FontSize="20" Text="Launcher Release" Foreground="White"/>
-                        <Image Source="Assets/pizzabar.jpg" Width="200" Height="150" Stretch="UniformToFill" />
-                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <StackPanel>
+                        <Image Source="Assets/pizzabar.jpg" Height="150" Stretch="UniformToFill" />
+                        <Label Content="Astral Client Beta Phase has now started!&#xD;&#xA;For beta users, get the beta at:&#xD;&#xA;https://astralclient.net" HorizontalAlignment="Left" VerticalAlignment="Top" Width="242" Height="58" Foreground="#FFCDCDCD" Margin="0,0,-10,0"/>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center"/>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="-11.5,0">
                             <TextBlock Text="Light" VerticalAlignment="Center" Margin="10" FontSize="20" FontFamily="Champagne &amp; Limousines" Foreground="White" Width="83" Height="26"/>
                             <Button Width="100" Content="View Post" FontFamily="Champagne &amp; Limousines" Margin="10"/>
                         </StackPanel>
                     </StackPanel>
                 </Grid>
-                <Grid Grid.Column="1" Height="300" Background="#FF171717" Margin="10" Width="230">
+                <Grid Grid.Column="1" Background="#FF171717" Margin="13,81,10,68" Width="230">
                     <Grid.Effect>
                         <DropShadowEffect BlurRadius="20" Color="#0F0F0F" ShadowDepth="1"/>
                     </Grid.Effect>
 
-                    <StackPanel Width="200">
-                        <TextBlock Margin="10" FontFamily="SansSerif" FontSize="20" Text="Mods Added" Foreground="White"/>
-                        <Image Source="Assets/size_960_16_9_pizza2.jpg" Width="200" Height="150" Stretch="UniformToFill" />
+                    <StackPanel>
+
+                        <Image Source="Assets/size_960_16_9_pizza2.jpg" Height="150" Stretch="UniformToFill" />
+                        <Label Content="XD" HorizontalAlignment="Left" VerticalAlignment="Top" Width="230" Height="58" Foreground="#FFCDCDCD"/>
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                             <TextBlock Text="Light" VerticalAlignment="Center" Margin="10" FontSize="20" FontFamily="Champagne &amp; Limousines" Foreground="White" Height="26" Width="83"/>
                             <Button Width="100" Content="View Post" FontFamily="Champagne &amp; Limousines" Margin="10"/>
                         </StackPanel>
                     </StackPanel>
                 </Grid>
-                <Grid Grid.Column="2" Height="300" Background="#FF171717" Margin="10" Width="230">
+                <Grid Grid.Column="2" Background="#FF171717" Margin="10,81,1,68">
                     <Grid.Effect>
                         <DropShadowEffect BlurRadius="20" Color="#0F0F0F" ShadowDepth="1"/>
                     </Grid.Effect>
 
-                    <StackPanel Width="200">
-                        <TextBlock Margin="10" FontFamily="SansSerif" FontSize="20" Text="beta testing" Foreground="White"/>
-                        <Image Source="Assets/Pizza-doce-de-Brigadeiro.jpg" Width="200" Height="150" Stretch="UniformToFill" />
+                    <StackPanel>
+                        <Image Source="Assets/Pizza-doce-de-Brigadeiro.jpg" Height="150" Stretch="UniformToFill" />
+                        <Label Content="Launcher and Client development phase &#xD;&#xA;has begun! " HorizontalAlignment="Left" VerticalAlignment="Top" Width="242" Height="58" Foreground="#FFCDCDCD"/>
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                             <TextBlock Text="Light" VerticalAlignment="Center" Margin="10" FontSize="20" FontFamily="Champagne &amp; Limousines" Foreground="White" Width="83" Height="26"/>
                             <Button Width="100" Content="View Post" FontFamily="Champagne &amp; Limousines" Margin="10"/>
