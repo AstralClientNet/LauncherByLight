@@ -160,6 +160,14 @@
             <Image Panel.ZIndex="10" Source="Assets/PicsArt_12-18-03.16.43.jpg" HorizontalAlignment="Left" Height="37" VerticalAlignment="Top" Width="38" Margin="13,534,0,0"/>
             <Label Content="Light#0622" HorizontalAlignment="Left" Margin="56,534,0,0" VerticalAlignment="Top" Foreground="Gray" FontSize="20"/>
         </Grid>
+        <Grid Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="9" Margin="205,343,0,0" Grid.Row="1" VerticalAlignment="Top" Width="806">
+            <Grid.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="Black" Offset="1"/>
+                    <GradientStop Color="#FF894AD4"/>
+                </RadialGradientBrush>
+            </Grid.Background>
+        </Grid>
 
     </Grid>
 </Window>

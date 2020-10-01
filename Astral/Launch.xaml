@@ -25,8 +25,26 @@
                     </StackPanel.RenderTransform>
                     <TextBlock FontFamily="Cooper Black" Foreground="#FFC00000"/>
                     <StackPanel Margin="10,10,0,10" Height="138">
-                        <TextBlock Text="Launch" FontSize="50" FontFamily="SansSerif" Foreground="WhiteSmoke"/>
-                        <TextBlock TextAlignment="Left" FontSize="25" FontFamily="Champagne &amp; Limousines" FontWeight="Bold" Margin="10,5,262,5" Foreground="#FFCDCDCD"><Run Text="Minecraft"/><Run Text=" "/></TextBlock>
+                        <TextBlock Text="Launch" FontSize="50" FontFamily="SansSerif" Foreground="WhiteSmoke">
+                            <TextBlock.Effect>
+                                <DropShadowEffect
+                                   ShadowDepth="4"
+                                   Direction="330"
+                                   Color="Black"
+                                   Opacity="0.5"
+                                   BlurRadius="4"/>
+                            </TextBlock.Effect>
+                        </TextBlock>
+                        <TextBlock TextAlignment="Left" FontSize="25" FontFamily="Champagne &amp; Limousines" FontWeight="Bold" Margin="10,5,262,5" Foreground="#FFCDCDCD"><Run Text="Minecraft"/><Run Text=" "/>
+                            <TextBlock.Effect>
+                                <DropShadowEffect
+                                   ShadowDepth="4"
+                                   Direction="330"
+                                   Color="Black"
+                                   Opacity="0.5"
+                                   BlurRadius="4"/>
+                            </TextBlock.Effect>
+                        </TextBlock>
                         <Label x:Name="mcVersion" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="258" Height="39" FontSize="24" Foreground="#FFE4E3E3"/>
                     </StackPanel>
                     <Button FontFamily="Champagne &amp; Limousines" Content="Launch" FontSize="18" Margin="20,25,200,25" Click="Button_Click" Height="41" BorderBrush="#009C3DFB">

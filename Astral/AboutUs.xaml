@@ -23,47 +23,28 @@
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <Grid Grid.Column="0" Height="300" Background="#FF171717" Margin="10" Width="230">
+                <Grid Background="#FF171717" Margin="10" Grid.ColumnSpan="3">
                     <Grid.Effect>
                         <DropShadowEffect BlurRadius="20" Color="#0F0F0F" ShadowDepth="1"/>
                     </Grid.Effect>
 
-                    <StackPanel Width="200">
-                        <TextBlock Margin="10" FontFamily="SansSerif" FontSize="20" Text="Launcher Release" Foreground="White"/>
-                        <Image Source="Assets/pizzabar.jpg" Width="200" Height="150" Stretch="UniformToFill" />
-                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                            <TextBlock Text="Light" VerticalAlignment="Center" Margin="10" FontSize="20" FontFamily="Champagne &amp; Limousines" Foreground="White" Width="83" Height="26"/>
-                            <Button Width="100" Content="View Post" FontFamily="Champagne &amp; Limousines" Margin="10"/>
-                        </StackPanel>
+                    <StackPanel Margin="10,0">
+                        <TextBlock Margin="10" FontFamily="SansSerif" FontSize="36" Text="Astral Client" Foreground="White" Height="39"/>
+                        <Label Content="Astral Client is a free optimization client and resource pack for&#xD;&#xA;Minecraft: Bedrock Edition." Foreground="White" FontSize="18" Height="69" Margin="10,0,0,0"/>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center"/>
                     </StackPanel>
-                </Grid>
-                <Grid Grid.Column="1" Height="300" Background="#FF171717" Margin="10" Width="230">
-                    <Grid.Effect>
-                        <DropShadowEffect BlurRadius="20" Color="#0F0F0F" ShadowDepth="1"/>
-                    </Grid.Effect>
-
-                    <StackPanel Width="200">
-                        <TextBlock Margin="10" FontFamily="SansSerif" FontSize="20" Text="Mods Added" Foreground="White"/>
-                        <Image Source="Assets/size_960_16_9_pizza2.jpg" Width="200" Height="150" Stretch="UniformToFill" />
-                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                            <TextBlock Text="Light" VerticalAlignment="Center" Margin="10" FontSize="20" FontFamily="Champagne &amp; Limousines" Foreground="White" Height="26" Width="83"/>
-                            <Button Width="100" Content="View Post" FontFamily="Champagne &amp; Limousines" Margin="10"/>
-                        </StackPanel>
-                    </StackPanel>
-                </Grid>
-                <Grid Grid.Column="2" Height="300" Background="#FF171717" Margin="10" Width="230">
-                    <Grid.Effect>
-                        <DropShadowEffect BlurRadius="20" Color="#0F0F0F" ShadowDepth="1"/>
-                    </Grid.Effect>
-
-                    <StackPanel Width="200">
-                        <TextBlock Margin="10" FontFamily="SansSerif" FontSize="20" Text="beta testing" Foreground="White"/>
-                        <Image Source="Assets/Pizza-doce-de-Brigadeiro.jpg" Width="200" Height="150" Stretch="UniformToFill" />
-                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                            <TextBlock Text="Light" VerticalAlignment="Center" Margin="10" FontSize="20" FontFamily="Champagne &amp; Limousines" Foreground="White" Width="83" Height="26"/>
-                            <Button Width="100" Content="View Post" FontFamily="Champagne &amp; Limousines" Margin="10"/>
-                        </StackPanel>
-                    </StackPanel>
+                    <Image Source="Assets/Cosmetics.png" HorizontalAlignment="Left" Height="220" Margin="22,134,0,0" VerticalAlignment="Top" Width="419"/>
+                    <Label Content="- Perfect for PvP Needs.&#xA;- Easy installation.&#xA;- Internal. Fullscreen.&#xD;&#xA;- Escape the hassle of using&#xD;&#xA;external apps.&#xA;" HorizontalAlignment="Left" Margin="459,165,0,0" VerticalAlignment="Top" Width="271" Height="172" Foreground="White" FontSize="22" RenderTransformOrigin="0.5,0.5" FontFamily="Segoe UI Light">
+                        <Label.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform AngleX="-0.475"/>
+                                <RotateTransform/>
+                                <TranslateTransform X="-0.913"/>
+                            </TransformGroup>
+                        </Label.RenderTransform>
+                    </Label>
+                    <Label Content="Copyright 2020 @AstralClientNet" HorizontalAlignment="Left" Margin="22,371,0,0" VerticalAlignment="Top" Foreground="#FF5F5F5F"/>
                 </Grid>
             </Grid>
         </materialDesign:TransitioningContent>

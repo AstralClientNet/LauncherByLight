@@ -29,10 +29,10 @@
                     </Grid.Effect>
 
                     <StackPanel Margin="0,0,65,0">
-                        <TextBlock Margin="10" FontFamily="SansSerif" FontSize="36" Foreground="White" Text="Launcher" Height="40"/>
+                        <TextBlock Margin="10" FontFamily="SansSerif" FontSize="36" Foreground="White" Height="40"><Run FontFamily="Franklin Gothic Book" Text="Launcher"/></TextBlock>
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10,0" Width="312">
                             <TextBlock VerticalAlignment="Center" Margin="10" FontSize="18" FontFamily="Champagne &amp; Limousines" Foreground="White" Width="159" Height="26" Text="Minimize to Tray"/>
-                            <Button Width="116" Content="Enabled" FontFamily="Champagne &amp; Limousines" Margin="10" Background="#FFB2FD73" BorderBrush="#002196F3"/>
+                            <Button Width="116" Content="Enabled" FontFamily="Champagne &amp; Limousines" Margin="10" Background="#FF01D601" BorderBrush="#002196F3"/>
                         </StackPanel>
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10,0" Width="312">
                             <TextBlock Text="RGB" VerticalAlignment="Center" Margin="10" FontSize="20" FontFamily="Champagne &amp; Limousines" Foreground="White" Width="159" Height="26"/>
@@ -40,7 +40,7 @@
                         </StackPanel>
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10,0" Width="312">
                             <TextBlock Text="Cache DLL" VerticalAlignment="Center" Margin="10" FontSize="20" FontFamily="Champagne &amp; Limousines" Foreground="White" Width="158" Height="26"/>
-                            <Button Width="116" Content="Enabled" FontFamily="Champagne &amp; Limousines" Margin="10" Background="#FFB2FD73" BorderBrush="#002196F3"/>
+                            <Button Width="116" Content="Enabled" FontFamily="Champagne &amp; Limousines" Margin="10" Background="#FF01D601" BorderBrush="#002196F3"/>
                         </StackPanel>
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10,0" Width="312">
                             <TextBlock Text="Branch" VerticalAlignment="Center" Margin="10" FontSize="20" FontFamily="Champagne &amp; Limousines" Foreground="White" Width="157" Height="26"/>
@@ -48,16 +48,16 @@
                         </StackPanel>
                     </StackPanel>
                 </Grid>
-                <Grid Grid.Column="1" Background="#FF171717" Margin="159,42,19,48" Grid.ColumnSpan="2">
+                <Grid Grid.Column="1" Background="#FF171717" Margin="165,42,0,48" Grid.ColumnSpan="2">
                     <Grid.Effect>
                         <DropShadowEffect BlurRadius="20" Color="#0F0F0F" ShadowDepth="1"/>
                     </Grid.Effect>
 
                     <StackPanel Margin="0,0,45,0">
-                        <TextBlock Margin="10" FontFamily="SansSerif" FontSize="36" Text="DLL" Foreground="White" Height="40"/>
+                        <TextBlock Margin="10" FontFamily="Franklin Gothic Book" FontSize="36" Text="DLL" Foreground="White" Height="40"/>
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Width="283">
                             <TextBlock VerticalAlignment="Center" Margin="10" FontSize="20" FontFamily="Champagne &amp; Limousines" Foreground="White" Height="26" Width="140"><Run Text="Generate"/><Run Text=" Logs"/></TextBlock>
-                            <Button Width="100" Content="Enabled" FontFamily="Champagne &amp; Limousines" Margin="10" BorderBrush="#002196F3" Background="#FFB2FD73"/>
+                            <Button Width="109" Content="Enabled" FontFamily="Champagne &amp; Limousines" Margin="10" BorderBrush="#002196F3" Background="#FF01D601"/>
                         </StackPanel>
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Width="283">
                             <TextBlock VerticalAlignment="Center" Margin="10" FontSize="20" FontFamily="Champagne &amp; Limousines" Foreground="White" Height="26" Width="140" Text="Log Path"/>
@@ -65,7 +65,7 @@
                         </StackPanel>
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Width="283">
                             <TextBlock VerticalAlignment="Center" Margin="10" FontSize="20" FontFamily="Champagne &amp; Limousines" Foreground="White" Height="26" Width="140" Text="Export Config"/>
-                            <Button Width="108" Content="Select Path..." FontFamily="Champagne &amp; Limousines" Margin="10" BorderBrush="#002196F3" Background="#FF9B3FE0"/>
+                            <Button Width="110" Content="Select Path..." FontFamily="Champagne &amp; Limousines" Margin="10" BorderBrush="#002196F3" Background="#FF9B3FE0"/>
                         </StackPanel>
                     </StackPanel>
                 </Grid>
