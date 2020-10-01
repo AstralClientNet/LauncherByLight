@@ -7,7 +7,7 @@
     <ProjectGuid>{F2571E19-BB3A-46FA-B1A1-15ECD9392887}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Pizzaria1</RootNamespace>
-    <AssemblyName>Pizzaria1</AssemblyName>
+    <AssemblyName>Astral</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -98,6 +98,7 @@
     <Reference Include="System.Management.Automation, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Management.Automation.dll.10.0.10586.0\lib\net40\System.Management.Automation.dll</HintPath>
     </Reference>
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -206,7 +207,13 @@
     <Resource Include="LogoNewDiscord2.png" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Assets\PicsArt_12-18-03.16.43.jpg" />
+  </ItemGroup>
+  <ItemGroup>
     <Resource Include="Logonobg2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\astralLogo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

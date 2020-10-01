@@ -13,8 +13,8 @@
             <ColumnDefinition Width="7*"/>
         </Grid.ColumnDefinitions>
         <materialDesign:TransitioningContent x:Name="TrainsitionigContentSlide" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.8}" Grid.ColumnSpan="2">
-            <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="637">
-                <StackPanel Width="507" Height="280" RenderTransformOrigin="0.5,0.5">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="637" Height="269">
+                <StackPanel Width="480" Height="270" RenderTransformOrigin="0.5,0.5">
                     <StackPanel.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
@@ -24,21 +24,12 @@
                         </TransformGroup>
                     </StackPanel.RenderTransform>
                     <TextBlock FontFamily="Cooper Black" Foreground="#FFC00000"/>
-                    <StackPanel Margin="10,10,-177,10">
+                    <StackPanel Margin="10,10,0,10" Height="138">
                         <TextBlock Text="Launch" FontSize="50" FontFamily="SansSerif" Foreground="WhiteSmoke"/>
                         <TextBlock TextAlignment="Left" FontSize="25" FontFamily="Champagne &amp; Limousines" FontWeight="Bold" Margin="10,5,262,5" Foreground="#FFCDCDCD"><Run Text="Minecraft"/><Run Text=" "/></TextBlock>
-                        <Label x:Name="mcVersion" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="258" Height="59" FontSize="24" Foreground="#FFE4E3E3"/>
+                        <Label x:Name="mcVersion" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="258" Height="39" FontSize="24" Foreground="#FFE4E3E3"/>
                     </StackPanel>
-                    <Button FontFamily="Champagne &amp; Limousines" Content="Launch" FontSize="18" Margin="20,25,200,25" Click="Button_Click" Height="41" BorderBrush="#009C3DFB">
-                        <Button.Background>
-                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                                <GradientStop Color="Black" Offset="0"/>
-                                <GradientStop Color="#FF8D0782" Offset="0.817"/>
-                                <GradientStop Color="#FF9D12FF"/>
-                                <GradientStop Color="#FFB224AF" Offset="0.247"/>
-                            </LinearGradientBrush>
-                        </Button.Background>
-                    </Button>
+                    <Button FontFamily="Champagne &amp; Limousines" Content="Launch" FontSize="18" Margin="20,25,200,25" Click="Button_Click" Height="41" BorderBrush="#009C3DFB" Background="#FF11A9FF"/>
                 </StackPanel>
             </StackPanel>
         </materialDesign:TransitioningContent>

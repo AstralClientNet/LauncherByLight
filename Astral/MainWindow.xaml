@@ -5,8 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Pizzaria1"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-        mc:Ignorable="d" Height="600" Width="1024" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None" >
+        mc:Ignorable="d" Height="596" Width="1011" AllowsTransparency="True" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None" Background="Transparent" Margin="10">
+    
     <Grid Background="#0A0A0A" MouseDown="Grid_MouseDown">
+        <Grid.Effect>
+            <DropShadowEffect BlurRadius="15" Direction="-90" RenderingBias="Quality" ShadowDepth="2"/>
+        </Grid.Effect>
         <Grid.RowDefinitions>
             <RowDefinition Height="41*"/>
             <RowDefinition Height="59*"/>
@@ -20,7 +24,11 @@
         <StackPanel VerticalAlignment="Top" Grid.ColumnSpan="2" Height="42">
 
             <Grid Panel.ZIndex="1" Height="10">
+                <Grid.Effect>
+                    <DropShadowEffect BlurRadius="20" Color="#0F0F0F" ShadowDepth="1"/>
+                </Grid.Effect>
                 <Grid.Background>
+                    
                     <RadialGradientBrush>
                         <GradientStop Color="Black" Offset="1"/>
                         <GradientStop Color="#FF894AD4"/>
@@ -57,17 +65,16 @@
         </StackPanel>
 
         <Grid Margin="205,42,0,24" Grid.RowSpan="2" Grid.ColumnSpan="2">
- 
+
             <Grid x:Name="GridPrincipal" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         </Grid>
-        
+
         <Grid HorizontalAlignment="Left" Height="586" Margin="-5,-32,0,0" VerticalAlignment="Top" Width="5" Background="#FF131212"/>
 
         <Grid Width="200" HorizontalAlignment="Left" Background="#111111" Margin="0,10,0,0" Grid.RowSpan="2">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="34*"/>
-                <ColumnDefinition Width="33*"/>
-            </Grid.ColumnDefinitions>
+            <Grid.Effect>
+                <DropShadowEffect BlurRadius="20" Color="#0F0F0F" ShadowDepth="1"/>
+            </Grid.Effect>
             <materialDesign:TransitioningContent x:Name="TrainsitionigContentSlide" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.2}" Foreground="#FF323131" Margin="0,28,0,127" Grid.ColumnSpan="2">
 
                 <Grid x:Name="GridCursor" Margin="0 100 0 0" Width="6" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top">
@@ -88,32 +95,71 @@
             </materialDesign:TransitioningContent>
 
             <ListView x:Name="ListViewMenu" Margin="0,128,0,127" Foreground="White" FontFamily="Champagne &amp; Limousines" FontSize="18" SelectionChanged="ListViewMenu_SelectionChanged" SelectedIndex="0" Grid.ColumnSpan="2" Background="#03FFFFFF" BorderBrush="#00ABADB3">
-                <ListViewItem Height="60" Selected="ListViewItem_Selected" Background="Transparent">
+                <ListViewItem Height="60" Selected="ListViewItem_Selected" Background="Transparent" Foreground="White">
+
                     <StackPanel Orientation="Horizontal">
                         <materialDesign:PackIcon Kind="Home" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
-                        <TextBlock Text="Launch" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
+                        <TextBlock Text="Launch" FontSize="17" VerticalAlignment="Center" Margin="20 0">
+                            <TextBlock.Effect>
+                                <DropShadowEffect
+                                   ShadowDepth="4"
+                                   Direction="330"
+                                   Color="Black"
+                                   Opacity="0.5"
+                                   BlurRadius="4"/>
+                            </TextBlock.Effect>
+                        </TextBlock>
                     </StackPanel>
                 </ListViewItem>
                 <ListViewItem Height="60">
                     <StackPanel Orientation="Horizontal">
                         <materialDesign:PackIcon Kind="Settings" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
-                        <TextBlock Text="Options" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
+                        <TextBlock Text="Options" FontSize="17" VerticalAlignment="Center" Margin="20 0">
+                            <TextBlock.Effect>
+                                <DropShadowEffect
+                                   ShadowDepth="4"
+                                   Direction="330"
+                                   Color="Black"
+                                   Opacity="0.5"
+                                   BlurRadius="4"/>
+                            </TextBlock.Effect>
+                        </TextBlock>
                     </StackPanel>
                 </ListViewItem>
                 <ListViewItem Height="60">
                     <StackPanel Orientation="Horizontal">
                         <materialDesign:PackIcon Kind="FormatListBulleted" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
-                        <TextBlock Text="Update" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
+                        <TextBlock Text="Update" FontSize="17" VerticalAlignment="Center" Margin="20 0">
+                            <TextBlock.Effect>
+                                <DropShadowEffect
+                                   ShadowDepth="4"
+                                   Direction="330"
+                                   Color="Black"
+                                   Opacity="0.5"
+                                   BlurRadius="4"/>
+                            </TextBlock.Effect>
+                        </TextBlock>
                     </StackPanel>
                 </ListViewItem>
                 <ListViewItem Height="60">
                     <StackPanel Orientation="Horizontal">
                         <materialDesign:PackIcon Kind="Newspaper" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
-                        <TextBlock Text="About Us" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
+                        <TextBlock Text="About Us" FontSize="17" VerticalAlignment="Center" Margin="20 0">
+                            <TextBlock.Effect>
+                                <DropShadowEffect
+                                   ShadowDepth="4"
+                                   Direction="330"
+                                   Color="Black"
+                                   Opacity="0.5"
+                                   BlurRadius="4"/>
+                            </TextBlock.Effect>
+                        </TextBlock>
                     </StackPanel>
                 </ListViewItem>
             </ListView>
-            <Image Panel.ZIndex="10" Source="LogoNoBg2.png" HorizontalAlignment="Left" Height="158" VerticalAlignment="Top" Width="164" Margin="16,-17,0,0" Grid.ColumnSpan="2"/>
+            <Image Panel.ZIndex="10" Source="LogoNoBg2.png" HorizontalAlignment="Left" Height="156" VerticalAlignment="Top" Width="177" Margin="23,-12,0,0"/>
+            <Image Panel.ZIndex="10" Source="Assets/PicsArt_12-18-03.16.43.jpg" HorizontalAlignment="Left" Height="37" VerticalAlignment="Top" Width="38" Margin="13,534,0,0"/>
+            <Label Content="Light#0622" HorizontalAlignment="Left" Margin="56,534,0,0" VerticalAlignment="Top" Foreground="Gray" FontSize="20"/>
         </Grid>
 
     </Grid>

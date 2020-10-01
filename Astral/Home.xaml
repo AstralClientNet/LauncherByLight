@@ -23,7 +23,7 @@
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <Grid Grid.Column="0" Height="300" Background="#FF171717" Margin="10" Width="230">
+                <Grid Grid.Column="0" Background="#FF171717" Margin="12,60,12,110" Width="230">
                     <Grid.Effect>
                         <DropShadowEffect BlurRadius="20" Color="#0F0F0F" ShadowDepth="1"/>
                     </Grid.Effect>
@@ -37,7 +37,7 @@
                         </StackPanel>
                     </StackPanel>
                 </Grid>
-                <Grid Grid.Column="1" Height="300" Background="#FF171717" Margin="10" Width="230">
+                <Grid Grid.Column="1" Background="#FF171717" Margin="12,60,11,110" Width="230">
                     <Grid.Effect>
                         <DropShadowEffect BlurRadius="20" Color="#0F0F0F" ShadowDepth="1"/>
                     </Grid.Effect>
@@ -51,13 +51,13 @@
                         </StackPanel>
                     </StackPanel>
                 </Grid>
-                <Grid Grid.Column="2" Height="300" Background="#FF171717" Margin="10" Width="230">
+                <Grid Grid.Column="2" Background="#FF171717" Margin="11,60,12,110" Width="230">
                     <Grid.Effect>
                         <DropShadowEffect BlurRadius="20" Color="#0F0F0F" ShadowDepth="1"/>
                     </Grid.Effect>
 
                     <StackPanel Width="200">
-                        <TextBlock Margin="10" FontFamily="SansSerif" FontSize="20" Foreground="White"><Run Text="B"/><Run Text="eta testing"/></TextBlock>
+                        <TextBlock Margin="10" FontFamily="SansSerif" FontSize="20" Foreground="White"><Run Text="Beta Testin"/><Run Text="g"/></TextBlock>
                         <Image Source="Assets/Pizza-doce-de-Brigadeiro.jpg" Width="200" Height="150" Stretch="UniformToFill" />
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                             <TextBlock Text="Light" VerticalAlignment="Center" Margin="10" FontSize="20" FontFamily="Champagne &amp; Limousines" Foreground="White" Width="83" Height="26"/>
