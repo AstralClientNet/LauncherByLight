@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Pizzaria1"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-        mc:Ignorable="d" Height="596" Width="1011" AllowsTransparency="True" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None" Background="Transparent" Margin="10">
+        mc:Ignorable="d" Height="596" Width="1011" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None">
 
     <Grid Background="#0A0A0A" MouseDown="Grid_MouseDown">
         <Grid.Effect>
@@ -28,7 +28,6 @@
                     <DropShadowEffect BlurRadius="20" Color="#0F0F0F" ShadowDepth="1"/>
                 </Grid.Effect>
                 <Grid.Background>
-
                     <RadialGradientBrush>
                         <GradientStop Color="Black" Offset="1"/>
                         <GradientStop Color="#FF894AD4"/>

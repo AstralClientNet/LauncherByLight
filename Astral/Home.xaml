@@ -35,10 +35,6 @@
                             <Button Width="116" Content="Enabled" FontFamily="Champagne &amp; Limousines" Margin="10" Background="#FFB2FD73" BorderBrush="#002196F3"/>
                         </StackPanel>
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10,0" Width="312">
-                            <TextBlock VerticalAlignment="Center" Margin="10" FontSize="20" FontFamily="Champagne &amp; Limousines" Foreground="White" Width="159" Height="26"><Run Text="Light "/><Run Text="Mode"/></TextBlock>
-                            <Button Width="116" Content="Disabled" FontFamily="Champagne &amp; Limousines" Margin="10" Background="#FFE83D4C" BorderBrush="#002196F3"/>
-                        </StackPanel>
-                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10,0" Width="312">
                             <TextBlock Text="RGB" VerticalAlignment="Center" Margin="10" FontSize="20" FontFamily="Champagne &amp; Limousines" Foreground="White" Width="159" Height="26"/>
                             <Button Width="116" Content="Disabled" FontFamily="Champagne &amp; Limousines" Margin="10" Background="#FFE83D4C" BorderBrush="#002196F3"/>
                         </StackPanel>
