@@ -57,7 +57,7 @@
                     </Button>
                 </StackPanel>
                 <Label x:Name="discordRpc" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="657,4,0,0" Foreground="#FF121212"/>
-                <Label Content="Astral Client" HorizontalAlignment="Left" Margin="331,-6,0,0" VerticalAlignment="Top" Foreground="Gray" FontSize="20"/>
+                <Label Content="Astral Client" HorizontalAlignment="Left" Margin="324,-6,0,0" VerticalAlignment="Top" Foreground="Gray" FontSize="20"/>
 
             </Grid>
 
@@ -74,7 +74,7 @@
             <Grid.Effect>
                 <DropShadowEffect BlurRadius="20" Color="#0F0F0F" ShadowDepth="1"/>
             </Grid.Effect>
-            <materialDesign:TransitioningContent x:Name="TrainsitionigContentSlide" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.2}" Foreground="#FF323131" Margin="0,28,0,127" Grid.ColumnSpan="2">
+            <materialDesign:TransitioningContent x:Name="TrainsitionigContentSlide" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.2}" Foreground="#FF323131" Margin="0,45,0,127">
 
                 <Grid x:Name="GridCursor" Margin="0 100 0 0" Width="6" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top">
                     <Grid.Background>
@@ -93,7 +93,7 @@
 
             </materialDesign:TransitioningContent>
 
-            <ListView x:Name="ListViewMenu" Margin="0,128,0,127" Foreground="White" FontFamily="Champagne &amp; Limousines" FontSize="18" SelectionChanged="ListViewMenu_SelectionChanged" SelectedIndex="0" Grid.ColumnSpan="2" Background="#03FFFFFF" BorderBrush="#00ABADB3">
+            <ListView x:Name="ListViewMenu" Margin="0,142,0,113" Foreground="White" FontFamily="Champagne &amp; Limousines" FontSize="18" SelectionChanged="ListViewMenu_SelectionChanged" SelectedIndex="0" Background="#03FFFFFF" BorderBrush="#00ABADB3">
                 <ListViewItem Height="60" Selected="ListViewItem_Selected" Background="Transparent" Foreground="White">
 
                     <StackPanel Orientation="Horizontal">
@@ -156,7 +156,7 @@
                     </StackPanel>
                 </ListViewItem>
             </ListView>
-            <Image Panel.ZIndex="10" Source="LogoNoBg2.png" HorizontalAlignment="Left" Height="161" VerticalAlignment="Top" Width="152" Margin="23,-15,0,0"/>
+            <Image Panel.ZIndex="10" Source="Assets/title.png" HorizontalAlignment="Left" Height="161" VerticalAlignment="Top" Width="152" Margin="25,10,0,0"/>
             <Image Panel.ZIndex="10" Source="Assets/PicsArt_12-18-03.16.43.jpg" HorizontalAlignment="Left" Height="37" VerticalAlignment="Top" Width="38" Margin="13,534,0,0"/>
             <Label Content="Light#0622" HorizontalAlignment="Left" Margin="56,534,0,0" VerticalAlignment="Top" Foreground="Gray" FontSize="20"/>
         </Grid>

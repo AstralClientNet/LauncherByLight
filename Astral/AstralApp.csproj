@@ -186,11 +186,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Assets\Pizza-doce-de-Brigadeiro.jpg" />
-    <Resource Include="Assets\pizzabar.jpg" />
-    <Resource Include="Assets\size_960_16_9_pizza2.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="logonobgico_irB_icon.ico" />
   </ItemGroup>
   <ItemGroup>
@@ -216,6 +211,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Assets\Cosmetics.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\title.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
