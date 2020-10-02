@@ -145,7 +145,7 @@
                 <ListViewItem Height="60">
                     <StackPanel Orientation="Horizontal">
                         <materialDesign:PackIcon Kind="FormatListBulleted" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
-                        <TextBlock Text="About Us" FontSize="17" VerticalAlignment="Center" Margin="20 0">
+                        <TextBlock Text="About" FontSize="17" VerticalAlignment="Center" Margin="20 0">
                             <TextBlock.Effect>
                                 <DropShadowEffect
                                    ShadowDepth="4"
@@ -159,8 +159,6 @@
                 </ListViewItem>
             </ListView>
             <Image Panel.ZIndex="10" Source="Assets/title.png" HorizontalAlignment="Left" Height="127" VerticalAlignment="Top" Width="152" Margin="25,10,0,0"/>
-            <Image Panel.ZIndex="10" Source="Assets/PicsArt_12-18-03.16.43.jpg" HorizontalAlignment="Left" Height="37" VerticalAlignment="Top" Width="38" Margin="13,534,0,0"/>
-            <Label Content="Light#0622" HorizontalAlignment="Left" Margin="56,534,0,0" VerticalAlignment="Top" Foreground="Gray" FontSize="20"/>
             <Grid HorizontalAlignment="Left" Height="2" Margin="10,126,0,0" VerticalAlignment="Top" Width="180" Background="#FF9E9E9E"/>
         </Grid>
         <Grid Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="8" Margin="205,344,0,0" Grid.Row="1" VerticalAlignment="Top" Width="806">
