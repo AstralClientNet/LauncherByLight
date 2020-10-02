@@ -115,7 +115,7 @@ namespace Pizzaria1
         public UserControlInicio()
         {
             InitializeComponent();
-            versionFinderForLabel("Get-AppPackage -name Microsoft.MinecraftUWP | select -expandproperty Version", mcVersion);
+            //versionFinderForLabel("Get-AppPackage -name Microsoft.MinecraftUWP | select -expandproperty Version", mcVersion);
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
