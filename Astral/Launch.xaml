@@ -14,7 +14,7 @@
         <materialDesign:TransitioningContent x:Name="TrainsitionigContentSlide" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.8}" Height="416" VerticalAlignment="Bottom" Margin="0,0,0,-85">
             <Grid Background="#FF151515" Margin="54,49,49,107">
                 <TextBlock VerticalAlignment="Center" Margin="17,10,268,213" FontSize="24" FontFamily="SansSerif" Foreground="White" Height="37" FontWeight="Bold"><Run Text="L A U N C H   M I N E C R"/><Run Text=" A F  T"/></TextBlock>
-                <TextBlock HorizontalAlignment="Left" Margin="17,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="452" Height="66" FontSize="16" FontFamily="SansSerif" Foreground="#FFA0A0A0" LineHeight="12"><Run Text="Astral Client offers a version changer for it's users. Original "/><LineBreak/><Run Text="source code from MC"/><Run Text="MrARM."/><Run Text=" "/></TextBlock>
+                <TextBlock HorizontalAlignment="Left" Margin="17,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="452" Height="66" FontSize="20" FontFamily="SansSerif" Foreground="#FFA0A0A0" LineHeight="12"><Run Text="Astral Client offers a version changer for it's users. "/><LineBreak/><Run Text="Original source code from MC"/><Run Text="MrARM."/><Run Text=" "/></TextBlock>
                 <Button FontFamily="SansSerif" Content="Launch" FontSize="20" Margin="27,192,230,26" Click="Button_Click" Height="41" BorderBrush="#009C3DFB">
                     <Button.Background>
                         <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">

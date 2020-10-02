@@ -43,7 +43,7 @@
                     <TextBlock VerticalAlignment="Center" Margin="260,251,255,118" FontSize="36" FontFamily="SansSerif" Foreground="#FFB0AFAF" Height="86" TextAlignment="Center" FontWeight="Bold" Text="6.9" FontStyle="Italic"/>
                     <TextBlock VerticalAlignment="Center" Margin="515,251,0,118" FontSize="36" FontFamily="SansSerif" Foreground="#FFB0AFAF" Height="86" TextAlignment="Center" Text="Beta 1.0" FontStyle="Italic"/>
                     <TextBlock VerticalAlignment="Center" Margin="260,337,255,94" FontSize="18" FontFamily="SansSerif" Foreground="White" Height="24" TextAlignment="Center" FontWeight="Bold" Text="MINECRAFT VERSION"/>
-                    <Label x:Name="mcVersionAboutUs" Content="" VerticalAlignment="Center" Margin="287,361,214,21" FontSize="36" FontFamily="SansSerif" Foreground="#FFB0AFAF" Height="73" FontStyle="Italic" />
+                    <Label x:Name="mcVersionAboutUs" Content="" VerticalAlignment="Center" Margin="281,366,186,16" FontSize="36" FontFamily="SansSerif" Foreground="#FFB0AFAF" Height="73" />
 
 
                 </Grid>
