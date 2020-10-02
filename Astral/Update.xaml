@@ -16,7 +16,7 @@
             <RowDefinition Height="43*"/>
             <RowDefinition Height="37*"/>
         </Grid.RowDefinitions>
-        <materialDesign:TransitioningContent x:Name="TrainsitionigContentSlide" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.5}" Grid.RowSpan="2" Grid.ColumnSpan="2">
+        <materialDesign:TransitioningContent x:Name="TrainsitionigContentSlide" OpeningEffect="{materialDesign:TransitionEffect FadeIn, Duration=0:0:0.8}" Grid.RowSpan="2" Grid.ColumnSpan="2">
             <Grid Width="760" Height="420">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>

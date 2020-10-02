@@ -6,7 +6,176 @@
              xmlns:local="clr-namespace:Pizzaria1"
              mc:Ignorable="d" 
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-             Height="auto" Width="auto">
+             Height="395" Width="auto">
+    <UserControl.Resources>
+        <Style x:Key="ButtonFocusVisual">
+            <Setter Property="Control.Template">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <Rectangle Margin="2" SnapsToDevicePixels="true" Stroke="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}" StrokeThickness="1" StrokeDashArray="1 2"/>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <LinearGradientBrush x:Key="ButtonNormalBackground" EndPoint="0,1" StartPoint="0,0">
+            <GradientStop Color="#F3F3F3" Offset="0"/>
+            <GradientStop Color="#EBEBEB" Offset="0.5"/>
+            <GradientStop Color="#DDDDDD" Offset="0.5"/>
+            <GradientStop Color="#CDCDCD" Offset="1"/>
+        </LinearGradientBrush>
+        <SolidColorBrush x:Key="ButtonNormalBorder" Color="#FF707070"/>
+        <Style x:Key="ToggleButtonStyle1" TargetType="{x:Type ToggleButton}">
+            <Setter Property="FocusVisualStyle" Value="{StaticResource ButtonFocusVisual}"/>
+            <Setter Property="Background" Value="{StaticResource ButtonNormalBackground}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource ButtonNormalBorder}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Padding" Value="1"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ToggleButton}">
+                        <StackPanel Orientation="Horizontal">
+                            <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                            <Border x:Name="on" Width="25" Height="25" Background="LightGray" CornerRadius="2,0,0,4" Margin="10,0,0,0">
+                                <TextBlock x:Name="onText" Text="On" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                            <Border x:Name="off" Width="25" Height="25" Background="LightGray" CornerRadius="0,2,4,0">
+                                <TextBlock x:Name="offText" Text="Off" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                        </StackPanel>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Foreground" Value="#ADADAD"/>
+                            </Trigger>
+                            <Trigger Property="IsChecked" Value="true">
+                                <Setter TargetName="on" Property="Background" Value="LightBlue"/>
+                                <Setter TargetName="onText" Property="Foreground" Value="White"/>
+                            </Trigger>
+                            <Trigger Property="IsChecked" Value="False">
+                                <Setter TargetName="off" Property="Background" Value="LightBlue"/>
+                                <Setter TargetName="offText" Property="Foreground" Value="White"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <SolidColorBrush x:Key="ComboBoxNormalBorderBrush" Color="#e3e9ef" />
+        <SolidColorBrush x:Key="ComboBoxNormalBackgroundBrush" Color="#fff" />
+        <SolidColorBrush x:Key="ComboBoxDisabledForegroundBrush" Color="#888" />
+        <SolidColorBrush x:Key="ComboBoxDisabledBackgroundBrush" Color="#eee" />
+        <SolidColorBrush x:Key="ComboBoxDisabledBorderBrush" Color="#888" />
+
+        <ControlTemplate TargetType="ToggleButton" x:Key="ComboBoxToggleButtonTemplate">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="20" />
+                </Grid.ColumnDefinitions>
+                <Border Grid.ColumnSpan="2" Name="Border"
+              BorderBrush="{StaticResource ComboBoxNormalBorderBrush}" 
+              CornerRadius="0" BorderThickness="1, 1, 1, 1" 
+              Background="{StaticResource ComboBoxNormalBackgroundBrush}" />
+                <Border Grid.Column="1" Margin="1, 1, 1, 1" BorderBrush="#444" Name="ButtonBorder"
+              CornerRadius="0, 0, 0, 0" BorderThickness="0, 0, 0, 0" 
+              Background="{StaticResource ComboBoxNormalBackgroundBrush}" />
+
+                <Path Name="Arrow" Grid.Column="1" 
+            Data="M0,0 L0,2 L4,6 L8,2 L8,0 L4,4 z"
+            HorizontalAlignment="Center" Fill="#444"
+            VerticalAlignment="Center" />
+            </Grid>
+            <ControlTemplate.Triggers>
+                <Trigger Property="UIElement.IsMouseOver" Value="True">
+                    <Setter Property="Panel.Background" TargetName="ButtonBorder" Value="WhiteSmoke"/>
+                </Trigger>
+                <Trigger Property="ToggleButton.IsChecked" Value="True">
+                    <Setter Property="Panel.Background" TargetName="ButtonBorder" Value="WhiteSmoke"/>
+                    <Setter Property="Shape.Fill" TargetName="Arrow" Value="#FF8D979E"/>
+                </Trigger>
+                <Trigger Property="UIElement.IsEnabled" Value="False">
+                    <Setter Property="Panel.Background" TargetName="Border" Value="{StaticResource ComboBoxDisabledBackgroundBrush}"/>
+                    <Setter Property="Panel.Background" TargetName="ButtonBorder" Value="{StaticResource ComboBoxDisabledBackgroundBrush}"/>
+                    <Setter Property="Border.BorderBrush" TargetName="ButtonBorder" Value="{StaticResource ComboBoxDisabledBorderBrush}"/>
+                    <Setter Property="TextElement.Foreground" Value="{StaticResource ComboBoxDisabledForegroundBrush}"/>
+                    <Setter Property="Shape.Fill" TargetName="Arrow" Value="#999"/>
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+
+        <Style x:Key="ComboBoxFlatStyle"  TargetType="{x:Type ComboBox}">
+            <Setter Property="UIElement.SnapsToDevicePixels" Value="True"/>
+            <Setter Property="FrameworkElement.OverridesDefaultStyle" Value="True"/>
+            <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Auto"/>
+            <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Auto"/>
+            <Setter Property="ScrollViewer.CanContentScroll" Value="True"/>
+            <Setter Property="TextElement.Foreground" Value="Black"/>
+            <Setter Property="FrameworkElement.FocusVisualStyle" Value="{x:Null}"/>
+            <Setter Property="Control.Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ComboBox">
+                        <Grid>
+                            <ToggleButton Name="ToggleButton" Grid.Column="2"
+                ClickMode="Press" Focusable="False"
+                IsChecked="{Binding Path=IsDropDownOpen, RelativeSource={RelativeSource TemplatedParent}, Mode=TwoWay}"
+                Template="{StaticResource ComboBoxToggleButtonTemplate}"/>
+
+                            <ContentPresenter Name="ContentSite" Margin="5, 3, 23, 3" IsHitTestVisible="False"
+                              HorizontalAlignment="Left" VerticalAlignment="Center"                              
+                              Content="{TemplateBinding ComboBox.SelectionBoxItem}" 
+                              ContentTemplate="{TemplateBinding ComboBox.SelectionBoxItemTemplate}"
+                              ContentTemplateSelector="{TemplateBinding ItemTemplateSelector}"/>
+                            <TextBox Name="PART_EditableTextBox" Margin="3, 3, 23, 3"                     
+                     IsReadOnly="{TemplateBinding IsReadOnly}"
+                     Visibility="Hidden" Background="Transparent"
+                     HorizontalAlignment="Left" VerticalAlignment="Center"
+                     Focusable="True" >
+                                <TextBox.Template>
+                                    <ControlTemplate TargetType="TextBox" >
+                                        <Border Name="PART_ContentHost" Focusable="False" />
+                                    </ControlTemplate>
+                                </TextBox.Template>
+                            </TextBox>
+                            <!-- Popup showing items -->
+                            <Popup Name="Popup" Placement="Bottom"
+                   Focusable="False" AllowsTransparency="True"
+                   IsOpen="{TemplateBinding ComboBox.IsDropDownOpen}"
+                   PopupAnimation="Slide">
+                                <Grid Name="DropDown" SnapsToDevicePixels="True"
+                    MinWidth="{TemplateBinding FrameworkElement.ActualWidth}"
+                    MaxHeight="{TemplateBinding ComboBox.MaxDropDownHeight}">
+                                    <Border Name="DropDownBorder" Background="White" Margin="0, 1, 0, 0"
+                        CornerRadius="0" BorderThickness="1,1,1,1" 
+                        BorderBrush="{StaticResource ComboBoxNormalBorderBrush}"/>
+                                    <ScrollViewer Margin="4" SnapsToDevicePixels="True">
+                                        <ItemsPresenter KeyboardNavigation.DirectionalNavigation="Contained" />
+                                    </ScrollViewer>
+                                </Grid>
+                            </Popup>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="ItemsControl.HasItems" Value="False">
+                                <Setter Property="FrameworkElement.MinHeight" TargetName="DropDownBorder" Value="95"/>
+                            </Trigger>
+                            <Trigger Property="UIElement.IsEnabled" Value="False">
+                                <Setter Property="TextElement.Foreground" Value="{StaticResource ComboBoxDisabledForegroundBrush}"/>
+                            </Trigger>
+                            <Trigger Property="ItemsControl.IsGrouping" Value="True">
+                                <Setter Property="ScrollViewer.CanContentScroll" Value="False"/>
+                            </Trigger>
+                            <Trigger Property="ComboBox.IsEditable" Value="True">
+                                <Setter Property="KeyboardNavigation.IsTabStop" Value="False"/>
+                                <Setter Property="UIElement.Visibility" TargetName="PART_EditableTextBox" Value="Visible"/>
+                                <Setter Property="UIElement.Visibility" TargetName="ContentSite" Value="Hidden"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="21*"/>
@@ -16,61 +185,66 @@
             <RowDefinition Height="43*"/>
             <RowDefinition Height="37*"/>
         </Grid.RowDefinitions>
-        <materialDesign:TransitioningContent x:Name="TrainsitionigContentSlide" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.5}" Grid.RowSpan="2" Grid.ColumnSpan="2">
-            <Grid Width="760" Height="420">
+        <materialDesign:TransitioningContent x:Name="TrainsitionigContentSlide" OpeningEffect="{materialDesign:TransitionEffect FadeIn, Duration=0:0:0.8}" Grid.RowSpan="2" Grid.ColumnSpan="2">
+            <Grid Width="760" Margin="0,0,0,-72">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="254*"/>
+                    <ColumnDefinition Width="125*"/>
+                    <ColumnDefinition Width="128*"/>
+                    <ColumnDefinition Width="253*"/>
                 </Grid.ColumnDefinitions>
-                <Grid Grid.Column="0" Background="#FF171717" Margin="0,42,153,48" Grid.ColumnSpan="2">
+                <Grid Grid.Column="0" Background="#FF171717" Margin="0,111,0,0" Grid.ColumnSpan="4">
                     <Grid.Effect>
                         <DropShadowEffect BlurRadius="20" Color="#0F0F0F" ShadowDepth="1"/>
                     </Grid.Effect>
 
-                    <StackPanel Margin="0,0,24,0">
-                        <TextBlock Margin="10" FontFamily="SansSerif" FontSize="36" Foreground="White" Height="40"><Run FontFamily="Franklin Gothic Book" Text="Launcher"/></TextBlock>
-                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10,0" Width="312">
-                            <TextBlock VerticalAlignment="Center" Margin="10" FontSize="18" FontFamily="Champagne &amp; Limousines" Foreground="White" Width="159" Height="26" Text="Minimize to Tray"/>
-                            <Button Width="116" Content="Enabled" FontFamily="Champagne &amp; Limousines" Margin="10" Background="#FF9B3FE0" BorderBrush="#002196F3"/>
-                        </StackPanel>
-                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="3,0,-21,0" Width="336">
-                            <TextBlock Text="RGB" VerticalAlignment="Center" Margin="10" FontSize="20" FontFamily="Champagne &amp; Limousines" Foreground="White" Width="159" Height="26"/>
-                            <Button Width="116" Content="Disabled" FontFamily="Champagne &amp; Limousines" Margin="10" Background="#FF006BEA" BorderBrush="#002196F3"/>
-                        </StackPanel>
-                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10,0" Width="312">
-                            <TextBlock Text="Cache DLL" VerticalAlignment="Center" Margin="10" FontSize="20" FontFamily="Champagne &amp; Limousines" Foreground="White" Width="158" Height="26"/>
-                            <Button Width="116" Content="Enabled" FontFamily="Champagne &amp; Limousines" Margin="10" Background="#FF9B3FE0" BorderBrush="#002196F3"/>
-                        </StackPanel>
-                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10,0" Width="312">
-                            <TextBlock Text="Branch" VerticalAlignment="Center" Margin="10" FontSize="20" FontFamily="Champagne &amp; Limousines" Foreground="White" Width="157" Height="26"/>
-                            <Button Width="119" Content="Select Branch..." FontFamily="Champagne &amp; Limousines" Margin="10" Background="#FF6C6C6C" BorderBrush="#002196F3"/>
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,493,0" Width="267" Height="220">
+                            <TextBlock VerticalAlignment="Center" Margin="10,10,10,186" FontSize="18" FontFamily="SansSerif" Foreground="White" Width="245" Height="24" TextAlignment="Center" FontWeight="Bold" Text="A F T E R    L A U N C H"/>
                         </StackPanel>
                     </StackPanel>
-                    <Grid HorizontalAlignment="Left" Height="2" Margin="13,57,0,0" VerticalAlignment="Top" Width="180" Background="#FF9E9E9E"/>
+                    <Button Content="HIDE LAUNCHER" FontFamily="Champagne &amp; Limousines" Margin="41,90,541,236" BorderBrush="#002196F3" Click="Button_Click" Foreground="LightGray">
+                        <Button.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FFA100C5"/>
+                                <GradientStop Color="#FF404DC9" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Button.Background>
+                    </Button>
+                    <Button Content="CLOSE LAUNCHER" FontFamily="Champagne &amp; Limousines" Margin="41,130,541,197" Background="#FF272727" BorderBrush="#002196F3" Foreground="LightGray"/>
+                    <Button Content="MINIMIZE TO TRAY" FontFamily="Champagne &amp; Limousines" Margin="41,171,541,156" Background="#FF272727" BorderBrush="#002196F3" Foreground="LightGray"/>
+                    <Label Content="What to do after Minecraft&#xD;&#xA;and the client is launched" HorizontalAlignment="Left" Margin="33,33,0,0" VerticalAlignment="Top" FontFamily="SansSerif" FontSize="16" Width="197" Height="69" Foreground="White"/>
+                    <TextBlock VerticalAlignment="Center" Margin="284,10,231,322" FontSize="18" FontFamily="SansSerif" Foreground="White" Height="24" TextAlignment="Center" FontWeight="Bold" Text="R E S O L U T I O N"/>
+                    <Label Content="Change Screen Resolution&#xD;&#xA;to get more FPS" HorizontalAlignment="Left" Margin="309,33,0,0" VerticalAlignment="Top" FontFamily="SansSerif" FontSize="16" Width="204" Height="69" Foreground="White"/>
+                    <Slider HorizontalAlignment="Left"
+                Margin="291,90,0,0"
+                VerticalAlignment="Top"
+                Width="250"
+               />
+                    <TextBlock VerticalAlignment="Center" Margin="10,221,505,110" FontSize="18" FontFamily="SansSerif" Foreground="White" Height="25" TextAlignment="Center" FontWeight="Bold" Text="B R A N C H"/>
+                    <Label Content="Select what branch of &#xD;&#xA;Astral you want to use" HorizontalAlignment="Left" Margin="52,246,0,0" VerticalAlignment="Top" FontFamily="SansSerif" FontSize="16" Width="167" Height="55" Foreground="White"/>
+                    <ComboBox Style="{StaticResource ComboBoxFlatStyle}" Name="textblock1" Margin="52,301,541,33"></ComboBox>
+                    <TextBox HorizontalAlignment="Left" Height="46" Margin="324,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="83" TextChanged="TextBox_TextChanged" Foreground="White" CaretBrush="#FF3E3E3E"/>
+                    <TextBox HorizontalAlignment="Left" Height="46" Margin="430,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="83" RenderTransformOrigin="1.217,-0.174" Foreground="White" CaretBrush="#FF3E3E3E"/>
+                    <Label Content="Or set a custom one...." HorizontalAlignment="Left" Margin="334,113,0,0" VerticalAlignment="Top" FontFamily="SansSerif" FontSize="16" Width="170" Height="36" Foreground="White"/>
+                    <TextBlock VerticalAlignment="Center" Margin="515,10,0,322" FontSize="18" FontFamily="SansSerif" Foreground="White" Height="24" TextAlignment="Center" FontWeight="Bold" Text="D L L"/>
+                    <TextBlock VerticalAlignment="Center" Margin="296,221,219,110" FontSize="18" FontFamily="SansSerif" Foreground="White" Height="25" TextAlignment="Center" FontWeight="Bold" Text="T H E M E"/>
+                    <Label Content="Choose which launcher&#xD;&#xA;theme you want to use." HorizontalAlignment="Left" Margin="334,246,0,0" VerticalAlignment="Top" FontFamily="SansSerif" FontSize="16" Width="177" Height="55" Foreground="White"/>
+                    <Label Content="Astral DLL Settings." HorizontalAlignment="Left" Margin="569,33,0,0" VerticalAlignment="Top" FontFamily="SansSerif" FontSize="16" Width="153" Height="33" Foreground="White"/>
+                    <Button Content="Export Config" FontFamily="Champagne &amp; Limousines" Margin="559,66,23,260" BorderBrush="#002196F3" Click="Button_Click" Foreground="LightGray">
+                        <Button.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FFA100C5"/>
+                                <GradientStop Color="#FF404DC9" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Button.Background>
+                    </Button>
                 </Grid>
-                <Grid Grid.Column="1" Background="#FF171717" Margin="165,42,0,48" Grid.ColumnSpan="2">
-                    <Grid.Effect>
+                <Image Source="Assets/Settings.png" HorizontalAlignment="Left" Height="111" VerticalAlignment="Top" Width="760" Grid.ColumnSpan="4" Stretch="UniformToFill">
+                    <Image.Effect>
                         <DropShadowEffect BlurRadius="20" Color="#0F0F0F" ShadowDepth="1"/>
-                    </Grid.Effect>
-
-                    <StackPanel Margin="0,0,45,0">
-                        <TextBlock Margin="10" FontFamily="Franklin Gothic Book" FontSize="36" Text="DLL" Foreground="White" Height="40"/>
-                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Width="290" Margin="6,0,0,0">
-                            <TextBlock VerticalAlignment="Center" Margin="10" FontSize="20" FontFamily="Champagne &amp; Limousines" Foreground="White" Height="26" Width="140"><Run Text="Generate"/><Run Text=" Logs"/></TextBlock>
-                            <Button Width="110" Content="Enabled" FontFamily="Champagne &amp; Limousines" Margin="10" BorderBrush="#002196F3" Background="#FF9B3FE0"/>
-                        </StackPanel>
-                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Width="283">
-                            <TextBlock VerticalAlignment="Center" Margin="10" FontSize="20" FontFamily="Champagne &amp; Limousines" Foreground="White" Height="26" Width="140" Text="Log Path"/>
-                            <Button Width="110" Content="Select Path..." FontFamily="Champagne &amp; Limousines" Margin="10" BorderBrush="#002196F3" Background="#FF6C6C6C"/>
-                        </StackPanel>
-                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Width="283">
-                            <TextBlock VerticalAlignment="Center" Margin="10" FontSize="20" FontFamily="Champagne &amp; Limousines" Foreground="White" Height="26" Width="140" Text="Export Config"/>
-                            <Button Width="110" Content="Select Path..." FontFamily="Champagne &amp; Limousines" Margin="10" BorderBrush="#002196F3" Background="#FF6C6C6C"/>
-                        </StackPanel>
-                    </StackPanel>
-                    <Grid HorizontalAlignment="Left" Height="2" Margin="13,57,0,0" VerticalAlignment="Top" Width="180" Background="#FF9E9E9E"/>
-                </Grid>
+                    </Image.Effect>
+                </Image>
             </Grid>
         </materialDesign:TransitioningContent>
     </Grid>
