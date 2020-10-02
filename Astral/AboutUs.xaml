@@ -17,34 +17,32 @@
             <RowDefinition Height="37*"/>
         </Grid.RowDefinitions>
         <materialDesign:TransitioningContent x:Name="TrainsitionigContentSlide" OpeningEffect="{materialDesign:TransitionEffect FadeIn, Duration=0:0:0.8}" Grid.RowSpan="2" Grid.ColumnSpan="2">
-            <Grid Width="760" Height="420">
+            <Grid Width="760" Height="518">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <Grid Background="#FF171717" Margin="10" Grid.ColumnSpan="3">
+                <Grid Background="#FF171717" Margin="0,63,0,0" Grid.ColumnSpan="3">
                     <Grid.Effect>
                         <DropShadowEffect BlurRadius="20" Color="#0F0F0F" ShadowDepth="1"/>
                     </Grid.Effect>
 
-                    <StackPanel Margin="10,0">
-                        <TextBlock Margin="10" FontFamily="SansSerif" FontSize="36" Text="Astral Client" Foreground="White" Height="39"/>
-                        <Label Content="Astral Client is a free optimization client and resource pack for&#xD;&#xA;Minecraft: Bedrock Edition." Foreground="White" FontSize="18" Height="69" Margin="10,0,0,0"/>
+                    <StackPanel Margin="10,118,10,0">
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center"/>
                     </StackPanel>
-                    <Image Source="Assets/Cosmetics.png" HorizontalAlignment="Left" Height="220" Margin="22,134,0,0" VerticalAlignment="Top" Width="419"/>
-                    <Label Content="- Perfect for PvP Needs.&#xA;- Easy installation.&#xA;- Internal. Fullscreen.&#xD;&#xA;- Escape the hassle of using&#xD;&#xA;external apps.&#xA;" HorizontalAlignment="Left" Margin="459,165,0,0" VerticalAlignment="Top" Width="271" Height="172" Foreground="White" FontSize="22" RenderTransformOrigin="0.5,0.5" FontFamily="Segoe UI Light">
-                        <Label.RenderTransform>
-                            <TransformGroup>
-                                <ScaleTransform/>
-                                <SkewTransform AngleX="-0.475"/>
-                                <RotateTransform/>
-                                <TranslateTransform X="-0.913"/>
-                            </TransformGroup>
-                        </Label.RenderTransform>
-                    </Label>
-                    <Label Content="Copyright 2020 @AstralClientNet" HorizontalAlignment="Left" Margin="22,371,0,0" VerticalAlignment="Top" Foreground="#FF5F5F5F"/>
+                    <Label Content="Copyright 2020 @AstralClientNet" HorizontalAlignment="Left" Margin="19,419,0,0" VerticalAlignment="Top" Foreground="#FF5F5F5F"/>
+                    <Image Source="Assets/AboutUs.png" HorizontalAlignment="Left" Height="126" VerticalAlignment="Top" Width="760" Stretch="UniformToFill" Margin="0,-8,0,0"/>
+
+                    <TextBlock HorizontalAlignment="Left" Margin="157,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="452" Height="66" FontSize="16" FontFamily="SansSerif" Foreground="#FFA0A0A0" TextAlignment="Center" LineHeight="12"><Run Text="Astral Client is an all-in-one optimization client &amp; resource"/><LineBreak/><Run Text="pack for Minecraft: Bedrock Edition. It packs tons of features"/><LineBreak/><Run Text="perfect for the PvP scene. It's time to change Bedrock."/></TextBlock>
+                    <TextBlock VerticalAlignment="Center" Margin="10,222,505,209" FontSize="18" FontFamily="SansSerif" Foreground="White" Height="24" TextAlignment="Center" FontWeight="Bold" Text="CLIENT VERSION"></TextBlock>
+                    <TextBlock VerticalAlignment="Center" Margin="260,222,255,209" FontSize="18" FontFamily="SansSerif" Foreground="White" Height="24" TextAlignment="Center" FontWeight="Bold" Text="RESOURCE PACK VERSION"/>
+                    <TextBlock VerticalAlignment="Center" Margin="515,222,0,209" FontSize="18" FontFamily="SansSerif" Foreground="White" Height="24" TextAlignment="Center" FontWeight="Bold"><Run Text="DLL"/><Run Text=" VERSION"/></TextBlock>
+                    <TextBlock VerticalAlignment="Center" Margin="10,251,505,118" FontSize="36" FontFamily="SansSerif" Foreground="#FFB0AFAF" Height="86" TextAlignment="Center" Text="Beta 1.0" FontStyle="Italic"/>
+                    <TextBlock VerticalAlignment="Center" Margin="260,251,255,118" FontSize="36" FontFamily="SansSerif" Foreground="#FFB0AFAF" Height="86" TextAlignment="Center" FontWeight="Bold" Text="6.9" FontStyle="Italic"/>
+                    <TextBlock VerticalAlignment="Center" Margin="515,251,0,118" FontSize="36" FontFamily="SansSerif" Foreground="#FFB0AFAF" Height="86" TextAlignment="Center" Text="Beta 1.0" FontStyle="Italic"/>
+                   
+
                 </Grid>
             </Grid>
         </materialDesign:TransitioningContent>

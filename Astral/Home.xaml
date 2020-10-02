@@ -240,7 +240,7 @@
                         </Button.Background>
                     </Button>
                 </Grid>
-                <Image Source="Assets/Settings.png" HorizontalAlignment="Left" Height="111" VerticalAlignment="Top" Width="760" Grid.ColumnSpan="4" Stretch="UniformToFill">
+                <Image Source="Assets/Settings.png" HorizontalAlignment="Left" Height="126" VerticalAlignment="Top" Width="760" Grid.ColumnSpan="4" Stretch="UniformToFill" Margin="0,-15,0,0">
                     <Image.Effect>
                         <DropShadowEffect BlurRadius="20" Color="#0F0F0F" ShadowDepth="1"/>
                     </Image.Effect>
