@@ -193,7 +193,7 @@
                     <ColumnDefinition Width="128*"/>
                     <ColumnDefinition Width="253*"/>
                 </Grid.ColumnDefinitions>
-                <Grid Grid.Column="0" Background="#FF171717" Margin="0,111,0,0" Grid.ColumnSpan="4">
+                <Grid Grid.Column="0" Background="#FF111111" Margin="0,111,0,0" Grid.ColumnSpan="4">
                     <Grid.Effect>
                         <DropShadowEffect BlurRadius="20" Color="#0F0F0F" ShadowDepth="1"/>
                     </Grid.Effect>

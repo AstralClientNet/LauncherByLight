@@ -23,8 +23,8 @@
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                
-                <Grid Grid.Column="0" Background="#FF171717" Margin="2,81,10,68">
+
+                <Grid Grid.Column="0" Background="#FF111111" Margin="2,81,10,68">
                     <Grid.Effect>
                         <DropShadowEffect BlurRadius="20" Color="#0F0F0F" ShadowDepth="1"/>
                     </Grid.Effect>
@@ -39,7 +39,7 @@
                         </StackPanel>
                     </StackPanel>
                 </Grid>
-                <Grid Grid.Column="1" Background="#FF171717" Margin="13,81,10,68" Width="230">
+                <Grid Grid.Column="1" Background="#FF111111" Margin="13,81,10,68" Width="230">
                     <Grid.Effect>
                         <DropShadowEffect BlurRadius="20" Color="#0F0F0F" ShadowDepth="1"/>
                     </Grid.Effect>
@@ -54,7 +54,7 @@
                         </StackPanel>
                     </StackPanel>
                 </Grid>
-                <Grid Grid.Column="2" Background="#FF171717" Margin="10,81,1,68">
+                <Grid Grid.Column="2" Background="#FF111111" Margin="10,81,1,68">
                     <Grid.Effect>
                         <DropShadowEffect BlurRadius="20" Color="#0F0F0F" ShadowDepth="1"/>
                     </Grid.Effect>

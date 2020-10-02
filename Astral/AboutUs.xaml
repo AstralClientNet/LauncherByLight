@@ -23,7 +23,8 @@
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <Grid Background="#FF171717" Margin="0,63,0,0" Grid.ColumnSpan="3">
+                
+                <Grid Background="#FF111111" Margin="0,63,0,0" Grid.ColumnSpan="3">
                     <Grid.Effect>
                         <DropShadowEffect BlurRadius="20" Color="#0F0F0F" ShadowDepth="1"/>
                     </Grid.Effect>
@@ -41,10 +42,11 @@
                     <TextBlock VerticalAlignment="Center" Margin="10,251,505,118" FontSize="36" FontFamily="SansSerif" Foreground="#FFB0AFAF" Height="86" TextAlignment="Center" Text="Beta 1.0" FontStyle="Italic"/>
                     <TextBlock VerticalAlignment="Center" Margin="260,251,255,118" FontSize="36" FontFamily="SansSerif" Foreground="#FFB0AFAF" Height="86" TextAlignment="Center" FontWeight="Bold" Text="6.9" FontStyle="Italic"/>
                     <TextBlock VerticalAlignment="Center" Margin="515,251,0,118" FontSize="36" FontFamily="SansSerif" Foreground="#FFB0AFAF" Height="86" TextAlignment="Center" Text="Beta 1.0" FontStyle="Italic"/>
-                   
+
 
                 </Grid>
             </Grid>
         </materialDesign:TransitioningContent>
+
     </Grid>
 </UserControl>
